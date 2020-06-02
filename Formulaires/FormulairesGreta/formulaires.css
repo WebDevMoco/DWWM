@@ -1,0 +1,17 @@
+
+.centerText{
+    text-align: center;
+    text-decoration: underline;
+}
+
+  abbr {
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    color: red;
+}
+
+.cadre{
+    border: 0.2em solid royalblue;
+    padding: 1em;
+}

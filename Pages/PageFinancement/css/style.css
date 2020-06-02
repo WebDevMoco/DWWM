@@ -1,0 +1,47 @@
+.card-deck {
+    margin: 100px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.card-title {
+    text-align: left;
+    padding-left: 1rem;
+    border: 1px solid #ff9800;
+    background-color: #ff9800;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: medium;
+}
+
+.btn {
+    padding-left: 1rem;
+    border-radius: 0;
+}
+
+.btn-block {
+    background-color: #134195 !important;
+    text-align: left;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-text {
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #ff9800;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

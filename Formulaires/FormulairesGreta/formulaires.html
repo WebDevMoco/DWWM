@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires pour le site du greta</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Mon CSS -->
+    <link rel="stylesheet" href="formulaires.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cadre">
+            <strong>
+                <h1 class="centerText">FORMULAIRES</h1>
+                <p>Voici la première fournée des formulaires de CONNECTION et D'INSCRIPTION</p>
+                <p>Les informations sont controlées</p>
+                <p>Le formulaire d'inscription export les informations vers le fichier gretaUsers.php</p>
+                <p>reste à faire sur connection mot de passe oubliés se connecter avec Google ou facebook</p>
+            </strong>
+        </div>
+        <br>
+        <div class="cadre">
+            <h2 class="centerText">Formulaire de connection 1</h2>
+            <p><strong>Les champs obligatoires sont suivis de <abbr title="required">*</abbr>.</strong> </p>
+            <form method="POST">
+                <div class="form-group">
+                    <label for="inputEmail1">Adresse mail :<abbr title="required">*</abbr></label>
+                    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec
+                        quelqu'un d'autre.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword1">Password :<abbr title="required">*</abbr></label>
+                    <input type="password" class="form-control" id="inputPassword1"
+                        aria-describedby="passwordHelpBlock">
+                    <small id="passwordHelpBlock" class="form-text text-muted">Votre mot de passe doit comporter entre 8
+                        et 20 caractères, contenir des lettres et des chiffres et ne doit pas contenir d'espaces, de
+                        caractères spéciaux ou d'emoji.</small>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </form>
+        </div>
+        <br>
+        <div class="cadre">
+            <h2 class="centerText">Formulaire d'inscription</h2>
+            <p><strong>Les champs obligatoires sont suivis de <abbr title="required">*</abbr>.</strong> </p>
+            <form  method="POST" action="gretaUsers.php">
+                <div class="form-group">
+                    <label for="LastName">Nom :<abbr title="required">*</abbr></label>
+                    <input type="text" class="form-control" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="FirstName">Prénom :<abbr title="required">*</abbr></label>
+                    <input type="text" class="form-control" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Adresse mail :<abbr title="required">*</abbr></label>
+                    <input type="email" class="form-control" name="eMail" aria-describedby="emailHelp"required>
+                    <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec
+                        quelqu'un d'autre.</small>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Mot De Passe :<abbr title="required">*</abbr></label>
+                    <input type="password" class="form-control" name="password"
+                     aria-describedby="passwordHelpBlock" required>
+                    <small id="passwordHelpBlock" class="form-text text-muted">Votre mot de passe doit comporter entre 8
+                        et 20 caractères, contenir des lettres et des chiffres et ne doit pas contenir d'espaces, de
+                        caractères spéciaux ou d'emoji.</small>
+                </div>
+                <div class="form-group">
+                    <label for="controlPassword1">Confirmation Du Mot De Passe :<abbr title="required">*</abbr></label>
+                    <input type="cntlPassword" class="form-control" name="controlPassword"
+                        aria-describedby="passwordHelpBlock" required>
+                    <small id="passwordHelpBlock" class="form-text text-muted">Votre mot de passe doit comporter entre 8
+                        et 20 caractères, contenir des lettres et des chiffres et ne doit pas contenir d'espaces, de
+                        caractères spéciaux ou d'emoji.</small>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Soumettre</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- bootstrap jquery javaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- Mon JavaScript -->
+    <script src="formulaires.js"></script>
+</body>
+
+</html>
